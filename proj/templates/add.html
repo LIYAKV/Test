@@ -1,0 +1,13 @@
+<html>
+    <head></head>
+    <body>
+        <form action="{{ url_for('add') }}" method="POST">
+           {{ csrf_token }}
+           NAME <input type="text" name="name12">
+           PHONE <input type="text" name="phone">
+           DATE <input type="text" name="date">
+           ADDRESS <input type="text" name="address">
+           <input type="submit">
+       </form>
+    </body>
+</html>
